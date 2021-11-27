@@ -1,0 +1,138 @@
+.card {
+  display: flex;
+  flex-direction: column;
+
+  background: $dark-blue-2;
+  border-radius: 12px;
+  box-shadow: 0 25px 50px 15px rgba($dark-blue, 0.56);
+  width: 280px;
+  padding: 1.2rem;
+
+  &-header {
+    &__img {
+      position: relative;
+      margin-bottom: 17px;
+      
+      &--bg {
+        max-width: 100%;
+        border-radius: 12px;
+      }
+
+      &--view {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        z-index: 1;
+        transition: opacity .5s ease-in-out;
+      }
+
+      &:hover &--view{
+        opacity: 1;
+      }
+      
+      &--overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 48%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 12px;
+        background-color: $secondary-color;
+        opacity: 0; 
+        transition: opacity .5s ease-in-out;
+        
+        &:hover {
+          opacity: .4;
+          cursor: pointer;
+        }
+      }
+    }
+
+    & a {
+      @extend %button-link;
+      font-weight: 600;
+      font-size: 18px;
+    }
+  }
+
+  &-desc {
+    &__paragraph {
+      font-size: 15px;
+      font-weight: 400;
+      padding-top: 15px;
+      color: $primary-color;
+      line-height: 1.6;
+    }
+
+    &__list {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+      font-size: 15px;
+      color: $primary-color;
+      padding: 15px 0;
+
+      &--cost {
+        @extend %to-center-list;
+
+        & span {
+          font-weight: 600;
+          color: $secondary-color;
+        }
+      }
+      
+      &--time {
+        @extend %to-center-list;
+      }
+
+      & img {
+        padding-right: 4px;
+      }
+    }
+  }
+
+  &-line {
+    border: thin solid $dark-blue-3;
+    width: 100%;
+  }
+
+  &-footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 15px;
+    
+    &__img {
+      background-origin: border-box;
+      background-size: auto;
+      width: 30px;
+      margin-right: 15px;
+      border-radius: 50%;
+      border: 1px solid $white-color;
+    }
+    
+    &__desc {
+      font-size: 14px;
+      letter-spacing: normal;
+      color: $primary-color;
+      
+      & a {
+        color: $white-color;
+        @extend %button-link;
+      }
+    }
+  }
+}
+
+@include xs {
+  .card-header__img {
+    &--view {
+      display: none;
+      opacity: 0;
+    }
+  } 
+}
