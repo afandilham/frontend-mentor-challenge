@@ -1,0 +1,181 @@
+.social-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+
+  &__title {
+    & h1 {
+      width: 300px;
+      color: $primary-color;
+      font-size: 1.9rem;
+      font-weight: 700;
+    }
+    
+    & p {
+      padding-top: 10px;
+      width: 70%;
+      color: $dark-gray;
+      line-height: 1.6;
+      font-weight: 500;
+    }
+  }
+
+  &__rate {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+    list-style-type: none;
+
+    &--card {
+      display: flex;
+      align-items: center;
+      padding: 0 25px;
+      background-color: $light-gray;
+      border-radius: 8px;
+
+      & span {
+        font-size: 13px;
+        color: $primary-color;
+        font-weight: 700;
+        padding-left: 30px;
+      }
+
+      
+      &:nth-child(1) {
+        margin-right: 80px;
+        margin-left: -50px;
+      }
+      
+      &:nth-child(2) {
+        margin-right: 40px;
+        margin-left: -10px;
+      }
+
+      &:nth-child(3) {
+        margin-left: 40px;
+      }
+    }
+  }
+}
+
+main {
+  margin: 3.5rem 0;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.review {
+  display: flex;
+  gap: 20px;
+
+  &-card {
+    padding: 25px;
+    background: $primary-color;
+    border-radius: 7px;
+
+    &:nth-child(2) {
+      margin: 20px 0 -20px 15px;
+    }
+    
+    &:nth-child(3) {
+      margin: 40px 0 -40px 15px;
+    }
+
+    &__person {
+      display: flex;
+
+      & img {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+      }
+
+      &--name {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 20px;
+        font-size: 13px;
+
+        & span:nth-child(1) {
+          color: $white-color;
+          font-weight: 700; 
+        }
+        
+        & span:nth-child(2) {
+          color: $secondary-color;
+          font-weight: 500; 
+          padding-top: 4px;
+        }
+      }
+    }
+
+    &__paragraph {
+      padding-top: 30px;
+      color: $white-color;
+      font-size: 12px;
+      line-height: 1.6;
+    }
+  }
+}
+
+
+@include lg {
+  .social-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    &__title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      & p {
+        width: 100%;
+      }
+    }
+
+    &__rate {
+      margin: 20px 0;
+
+      &--card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 25px;
+  
+        & span {
+          font-size: .8rem;
+          padding: 8px 0 0 0;
+        }
+  
+        @for $i from 1 through 3 {
+          &:nth-child(#{$i}) {
+            margin: 0;
+          }
+        } 
+      }
+    }
+  }
+
+  main {
+    margin: 3rem 0;
+    padding-bottom: 2rem;
+  }
+
+  .review {
+    display: flex;
+    flex-direction: column;
+
+    @for $i from 2 through 3 {
+      &-card:nth-child(#{$i}) {
+        margin: 0;
+      }
+    }
+  }
+}
