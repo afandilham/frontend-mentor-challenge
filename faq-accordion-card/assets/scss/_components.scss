@@ -1,0 +1,122 @@
+// Components
+.card-faq {
+  display: flex;
+  background: url('../img/bg-pattern-desktop.svg');
+  background-color: #fff;
+  box-shadow: 2px 14px 30px -8px $dark-blue-desaturated;
+  border-radius: 20px;
+  margin: 5rem 20px;
+  background-position: left -600px top -300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem;
+  overflow: hidden;
+  
+  &__img {
+    position: relative;
+    
+    &--illustration {
+      transform: translate(-20%);
+      overflow-x: hidden;
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  &__box {
+    position: absolute;
+    transform: translate(-120px, 145px);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+
+    & h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      padding: .8rem 0;
+    }
+  }
+
+  &__item {
+    font-weight: 400;
+    border-bottom: 2px solid $light-gray;
+
+    &[open] > .card-faq__question::after {
+      transform: rotate(180deg);
+    }
+  }
+  
+  &__question {
+    display: flex;
+    justify-content: space-between;
+    font-size: .9rem;
+    color: $dark-gray-blue;
+    cursor: pointer;
+    padding: 17px 0;
+
+    &:focus {
+      font-weight: 700;
+    }
+    
+    &:hover {
+      color: $soft-red;
+    }
+
+    &::after {
+      content: url('../img/icon-arrow-down.svg');
+      margin-left: 4rem;
+    }
+  }
+
+  &__answer {
+    font-size: 0.65rem;
+    max-width: 300px;
+    padding-bottom: 8px;
+    line-height: 1.6;
+  }
+}
+
+@include md {
+  .card-faq {
+    background: url('../img/bg-pattern-mobile.svg') no-repeat;
+    background-color: #fff;
+    background-position: top -10px center;
+    flex-direction: column;
+    margin: 6rem 20px;
+    overflow: visible;
+    
+    &__img {
+      display: flex;
+      justify-content: center;
+
+      &--illustration {
+        position: absolute;
+        transform: translateY(-80%);
+        width: 220px;
+      }
+    }
+    &__list {
+      & h1 {
+        text-align: center;
+        margin-top: 4rem;
+      }
+    }
+
+    &__question {
+      font-size: .8rem;
+
+      &:hover {
+        color: $dark-blue-desaturated;
+      }
+
+      &::after {
+        margin-left: 0;
+      }
+    }
+
+    &__box {
+      display: none;
+    }
+  }
+}
