@@ -1,0 +1,47 @@
+// Primary Color
+$primary-color: hsl(163, 72%, 41%);
+$secondary-color: hsl(356, 69%, 56%);
+
+$fb-color: hsl(208, 92%, 53%);
+$twitter-color: hsl(203, 89%, 53%);
+$yellow-instagram-color: hsl(37, 97%, 70%);
+$pink-instagram-color: hsl(329, 70%, 58%);
+$youtube-color: hsl(348, 97%, 39%);
+
+// Linear Gradient
+$blue-dark-color: hsl(210, 78%, 56%);
+$green-dark-color: hsl(146, 68%, 55%);
+
+// Light color
+$light-color: hsl(230, 22%, 74%);
+
+// Dark Theme
+$blue-dark: hsl(230, 17%, 14%);
+$blue-darker: hsl(232, 19%, 15%);
+$blue-dark-desaturate: hsl(228, 28%, 20%);
+$blue-desaturate: hsl(228, 34%, 66%);
+$white-color: hsl(0, 0%, 100%);
+
+// Light Theme
+$pale-blue: hsl(225, 100%, 98%);
+$gray-light: hsl(227, 47%, 96%);
+$gray-dark: hsl(228, 12%, 44%);
+$gray-darker: hsl(230, 17%, 14%);
+
+:root {
+  --color-page: #{$blue-dark};
+  --color-page-2: #{$blue-darker};
+  --color-dark: #{$blue-dark-desaturate};
+  --color-desaturate: #{$blue-desaturate};
+  --color-text: #{$white-color};
+  --color-hover-card: hsl(228, 28%, 35%);
+}
+
+.light-theme {
+  --color-page: #{$white-color};
+  --color-page-2: #{$pale-blue};
+  --color-dark: #{$gray-light};
+  --color-desaturate: #{$gray-dark};
+  --color-text: #{$gray-darker};
+  --color-hover-card: hsl(228, 28%, 75%);
+}

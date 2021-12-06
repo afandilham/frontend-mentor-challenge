@@ -1,0 +1,59 @@
+$breakpoints: (
+  "xs": 375px,
+  "md": 800px,
+  "lg": 1000px,
+  "xl": 1440px
+);
+
+@mixin xs {
+  @media (max-width: map-get($breakpoints, "xs")) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: map-get($breakpoints, "md")) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (max-width: map-get($breakpoints, "lg")) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (max-width: map-get($breakpoints, "xl")) {
+    @content;
+  }
+}
+
+@mixin border-color-card {
+  position: absolute;
+  content: "";
+  top: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 4px;
+  width: 100%;
+}
+
+@mixin card-grid {
+  display: grid;
+  grid-area: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@mixin card-default {
+  display: flex;
+  flex-direction: column;
+  color: var(--color-text);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all .2s ease;
+
+  &:hover {
+    background: var(--color-hover-card);
+  }
+}
