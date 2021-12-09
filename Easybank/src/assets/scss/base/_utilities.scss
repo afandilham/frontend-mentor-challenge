@@ -1,0 +1,7 @@
+.hidden {
+  display: none;
+}
+
+@mixin col-1 { grid-template-columns: repeat(1, 1fr) }
+@mixin col-2 { grid-template-columns: repeat(2, 1fr) }
+@mixin col-3 { grid-template-columns: repeat(3, 1fr) }

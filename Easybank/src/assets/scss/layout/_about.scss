@@ -1,0 +1,72 @@
+.about {
+  display: flex;
+  background: $color-blue-light;
+  margin: 0 -20px;
+  z-index: -4;
+  padding: 7rem 20px;
+
+  &-title {
+    font-size: clamp(1rem, 2vw + 1.5rem, 2rem);
+    font-weight: 400;
+    color: $color-primary-dark;
+    padding-bottom: 20px;
+  }
+
+  &-desc {
+    font-size: clamp(0.667rem, 2vw + 1rem, .9rem);
+    color: $color-blue-gray;
+    max-width: 600px;
+    line-height: 1.5;
+    padding-bottom: 4rem;
+  }
+
+  &-features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+
+  &-card {
+    color: $color-primary-dark;
+
+    & h3 {
+      font-size: 24px;
+      padding: 2rem 0;
+    }
+
+    & p {
+      font-weight: 300;
+      font-size: clamp(0.667rem, 2vw + 1rem, 1.111rem);
+    }
+  }
+}
+
+@include lg {
+  .about {
+    &-features {
+      @include col-3;
+    }
+  }
+}
+
+@include md {
+  .about {
+    &-features {
+      @include col-2;
+    }
+
+    &-title,
+    &-desc {
+      text-align: center;
+    }
+  }
+}
+
+@include sm {
+  .about {
+    &-features {
+      @include col-1;
+      text-align: center;
+    }
+  }
+}

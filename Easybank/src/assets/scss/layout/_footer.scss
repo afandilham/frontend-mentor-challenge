@@ -1,0 +1,105 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  min-height: 200px;
+  background: $color-primary-dark;
+  padding: 40px 90px;
+
+  &-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    &__social a {
+      padding: 0 5px;
+    }
+  }
+
+  &-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & ul {
+      list-style: none;
+      padding-right: 80px;
+    }
+
+    & li {
+      padding: 5px 0;
+
+      & a {
+        font-weight: 300;
+        color: $color-white;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+
+    & span {
+      color: $color-blue-gray;
+      font-size: 16px;
+    }
+  }
+}
+
+@include lg {
+  .footer {
+    align-items: center;
+    flex-direction: column;
+
+    &-logo {
+      align-items: center;
+
+      & a {
+        padding: 20px 10px;
+      }
+    }
+
+    &-links {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-top: 30px;
+
+      & ul {
+        text-align: center;
+        padding-right: 0;
+      }
+
+      & li {
+        padding: 7px 0;
+      }
+    }
+
+    &-button {
+      align-items: center;
+      padding-top: 20px;
+
+      & span {
+        padding-top: 20px;
+      }
+    }
+  }
+}
+
+@include sm {
+  .footer {
+    &-logo {
+      &__social a {
+        padding: 10px 4px;
+      }
+    }
+
+    &-button span {
+      text-align: center;
+      font-size: 10px;
+    }
+  }
+}
