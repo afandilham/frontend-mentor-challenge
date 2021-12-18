@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <section class="header">
     <div class="wrapper">
       <div class="header-section">
         <div class="header-hero">
@@ -21,5 +21,5 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>

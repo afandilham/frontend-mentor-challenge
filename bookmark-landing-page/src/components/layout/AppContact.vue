@@ -1,5 +1,5 @@
 <template>
-  <section class="contact">
+  <section id="contact" class="contact">
     <div class="wrapper">
       <div class="contact-desc">
         <p class="contact-slogan">35,000+ already joined</p>

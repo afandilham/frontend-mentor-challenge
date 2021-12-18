@@ -1,5 +1,5 @@
 <template>
-  <section class="download">
+  <section id="download" class="download">
     <div class="wrapper">
       <base-description>
         <template #heading>Download the extension</template>

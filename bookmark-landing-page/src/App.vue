@@ -1,10 +1,12 @@
 <template>
   <app-nav></app-nav>
   <app-header></app-header>
-  <features-view></features-view>
-  <download-view></download-view>
-  <faq-view></faq-view>
-  <app-contact></app-contact>
+  <main>
+    <features-view></features-view>
+    <download-view></download-view>
+    <faq-view></faq-view>
+    <app-contact></app-contact>
+  </main>
   <app-footer></app-footer>
 </template>
 

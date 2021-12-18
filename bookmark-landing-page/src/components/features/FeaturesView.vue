@@ -1,5 +1,5 @@
 <template>
-  <section class="features">
+  <section id="features" class="features">
     <div class="wrapper">
       <base-description>
         <template #heading>Features</template>

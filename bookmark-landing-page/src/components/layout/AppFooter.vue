@@ -1,5 +1,5 @@
 <template>
-  <section class="footer">
+  <section id="footer" class="footer">
     <div class="wrapper">
       <div class="footer-body">
         <div class="footer-link">
@@ -22,13 +22,13 @@
             </svg>
           </div>
           <ul class="footer-list">
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
         <div class="footer-social">
-          <a href="#">
+          <a href="https://www.facebook.com" aria-label="facebook">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
               <path
                 class="footer-icon"
@@ -37,7 +37,7 @@
               />
             </svg>
           </a>
-          <a href="#">
+          <a href="https://www.twitter.com" aria-label="facebook">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20">
               <path
                 class="footer-icon"

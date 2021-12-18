@@ -1,9 +1,9 @@
 <template>
   <div class="nav">
-    <a href="#" class="nav-home">
+    <a href="https://bookmark-ld-page.surge.sh/" class="nav-home">
       <img src="../../assets/img/logo-bookmark.svg" alt="bookmark" />
     </a>
-    <nav role="navigation">
+    <nav>
       <ul class="nav-list">
         <li><a href="#features">Features</a></li>
         <li><a href="#Pricing">Pricing</a></li>
