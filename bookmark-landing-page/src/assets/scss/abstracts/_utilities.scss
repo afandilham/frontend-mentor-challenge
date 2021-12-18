@@ -1,0 +1,63 @@
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.color {
+  &-blue {
+    background: $color-primary;
+    border: 2px solid $color-primary;
+    color: #fff;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  &-red {
+    background: $color-secondary;
+    border: 2px solid $color-secondary;
+    color: #fff;
+
+    &:hover {
+      color: $color-secondary;
+    }
+  }
+
+  &-gray {
+    background: #fff;
+    border: 0 solid #fff;
+    color: $color-dark;
+    
+    &:hover {
+      border: 2px solid $color-dark;
+      color: $color-dark;
+    }
+  }
+
+  &-transparent {
+    background: transparent;
+    border: 2px solid $color-white;
+    width: 100%;
+    color: $color-white;
+    padding: 20px !important;
+    font-size: 16px !important;
+
+    &:hover {
+      color: $color-dark;
+    }
+  }
+}
+
+@mixin shape-default {
+  width: 480px;
+  height: 320px;
+  background: $color-primary;
+  z-index: -1;
+}
+
+@include xl {
+  .wrapper {
+    margin: 0 2rem;
+  }
+}

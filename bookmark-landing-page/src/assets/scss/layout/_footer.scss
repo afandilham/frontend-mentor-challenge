@@ -1,0 +1,93 @@
+.footer {
+  background: $color-dark;
+  color: $color-white;
+  height: 100px;
+  padding: 40px 0;
+
+  &-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-link {
+    & > img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  &-list {
+    padding-left: 20px;
+    list-style: none;
+
+    & > li {
+      padding: 0 20px;
+
+      & > a {
+        font-weight: 300;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: $color-white;
+        text-decoration: none;
+        transition: all .2s ease;
+
+        &:hover {
+          color: $color-secondary;
+        }
+      }
+    }
+  }
+
+  &-link,
+  &-list {
+    display: flex;
+  }
+
+  &-social > a {
+    padding: 0 15px;
+  }
+
+  &-icon {
+    fill: $color-white;
+    transition: all .2s ease;
+
+    &:hover {
+      fill: $color-secondary;
+    }
+  }
+}
+
+@include lg {
+  .footer {
+    min-height: 250px;
+
+    &-body,
+    &-link,
+    &-list {
+      align-items: center;
+      flex-direction: column;
+    }
+
+    &-link {
+      justify-content: center;
+    }
+
+    &-list {
+      padding: 0;
+
+      & > li {
+        padding: 10px 0;
+
+        & > a {
+          text-align: center;
+        }
+      }
+    }
+
+    &-social {
+      padding-top: 20px;
+    }
+  }
+}

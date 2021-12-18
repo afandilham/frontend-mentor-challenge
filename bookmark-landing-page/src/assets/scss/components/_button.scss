@@ -1,0 +1,20 @@
+.button {
+  padding: 11px 30px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 5px;
+  border-width: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  box-shadow:
+    0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075),
+    0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075),
+  ;
+  
+  &:hover {
+    background: #fff;
+  }
+}

@@ -1,0 +1,122 @@
+.features {
+  height: 800px;
+
+  &-tab {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    
+    & > button {
+      position: relative;
+      font-weight: 700;
+      padding: 20px 60px;
+      border: none;
+      color: $color-gray;
+      background-color: transparent;
+      border-bottom: 1px solid hsl(229, 8%, 90%);
+      cursor: pointer;
+      transition: all .3s ease;
+      
+      &.active {
+        color: $color-dark;
+        border-bottom: 3px solid $color-secondary;
+      }
+    }
+  }
+
+  &-body {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-background {
+    position: relative;
+
+    & > img {
+      width: 500px;
+      height: 350px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -80px;
+      top: 100px;
+      @include shape-default;
+      border-top-right-radius: 50%;
+      border-bottom-right-radius: 50%;
+    }
+  }
+
+  &-desc {
+    padding: 0 100px;
+    margin-top: 50px;
+
+    & > h2 {
+      color: $color-dark;
+      font-size: 2rem;
+    }
+
+    & > p {
+      color: $color-gray;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.6;
+      padding: 25px 0;
+    }
+  }
+}
+
+@include lg {
+  .features {
+    height: 1100px;
+    
+    &-tab {
+      flex-direction: column;
+
+      & > button.active::after {
+        width: 20px;
+      }
+    }
+
+    &-background {
+      & > img {
+        height: auto;
+        width: 100%;
+      }
+
+      &::before {
+        top: 70px;
+        width: 300px;
+        height: 80%;
+      }
+    }
+
+    &-body {
+      flex-direction: column;
+    }
+
+    &-desc {
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    & .button {
+      display: none;
+    }
+  }
+}
+
+@include xs {
+  .features {
+    &-desc {
+      & > h2 {
+        font-size: 1.2rem;
+      }
+
+      & > p {
+        font-size: 12px;
+      }
+    }
+  }
+}
