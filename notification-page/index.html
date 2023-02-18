@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <title>Frontend Mentor | Notifications page</title>
+  </head>
+  <body>
+    <div class="notification">
+      <div class="notification-header">
+        <h3>Notifications <span>3</span></h3>
+        <button>Mark all as read</button>
+      </div>
+      <ul class="notification-list">
+        <li class="notification-list__item unread">
+          <img src="assets/images/avatar-mark-webber.webp" alt="Mark Webber" />
+          <div class="notification-post">
+            <div class="notification-post__title">
+              <a href="#">Mark Webber</a> 
+              reacted to your recent post
+              <a class="notification-post--article" href="#">My first tournament today!</a>
+            </div>
+            <div class="notification-post--date">1m ago</div>
+          </div>
+        </li>
+        <li class="notification-list__item unread">
+          <img src="assets/images/avatar-angela-gray.webp" alt="Angela Gray">
+          <div class="notification-post">
+            <div class="notification-post__title">
+              <a href="#">Angela Gray</a>
+              followed you 
+            </div>
+            <div class="notification-post--date">5m ago</div>
+          </div>
+        </li>
+        <li class="notification-list__item unread">
+          <img src="assets/images/avatar-jacob-thompson.webp" alt="Jacob Thompson">
+          <div class="notification-post">
+            <div class="notification-post__title">
+              <a href="#">Jacob Thompson</a>
+              has joined your group 
+              <a class="notification-post--group" href="#">Chess Club</a>
+            </div>
+            <div class="notification-post--date">1 day ago</div>
+          </div>
+        </li>
+        <li class="notification-list__item read">
+          <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="Rizky Hasanuddin">
+          <div class="notification-post">
+            <div class="notification-post__title">
+              <a href="#">Rizky Hasanuddin</a>
+              sent you a private message
+            </div>
+            <div class="notification-post--date">5 days ago</div>
+            <div class="notification-post--message">
+              <a href="#">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.</a>
+            </div>
+          </div>
+        </li>
+        <li class="notification-list__item read">
+          <img src="assets/images/avatar-kimberly-smith.webp" alt="Kimberly Smith">
+          <div class="notification-post">
+            <div class="notification-post__title">
+              <a href="#">Kimberly Smith</a>
+              commented on your picture
+            </div>
+            <div class="notification-post--date">1 week ago</div>
+          </div>
+          <a class="notification-post--commented" href="#">
+            <img src="assets/images/image-chess.webp" alt="chess image-chess">
+          </a>
+        </li>
+        <li class="notification-list__item read">
+          <img src="assets/images/avatar-nathan-peterson.webp" alt="Nathan Peterson">
+          <div class="notification-post">
+            <div class="notification-post__title">
+              <a href="#">Nathan Peterson</a>
+              reacted to your recent post
+              <a class="notification-post--article" href="#">5 end-game strategies to increase your win rate</a>
+            </div>
+            <div class="notification-post--date">2 weeks ago</div>
+          </div>
+        </li>
+        <li class="notification-list__item read">
+          <img src="assets/images/avatar-anna-kim.webp" alt="Anna Kim">
+          <div class="notification-post">
+            <div class="notification-post__title">
+              <a href="#">Anna Kim</a>
+              left the group 
+              <a class="notification-post--group" href="#">Chess Club</a>
+            </div>
+            <div class="notification-post--date">2 weeks ago</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
