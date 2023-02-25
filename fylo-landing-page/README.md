@@ -1,41 +1,52 @@
-# fylo-landing-page
+# Frontend Mentor - Fylo dark theme landing page solution
 
-This template should help get you started developing with Vue 3 in Vite.
+This is a solution to the [Fylo dark theme landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Recommended IDE Setup
+## Table of contents
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+- [Author](#author)
+- 
+## Overview
 
-## Customize configuration
+### The challenge
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Users should be able to:
 
-## Project Setup
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
 
-```sh
-npm install
-```
+### Screenshot
 
-### Compile and Hot-Reload for Development
+1. Desktop screenshot
 
-```sh
-npm run dev
-```
+![desktop screenshot](./design/desktop-screenshot.png)
 
-### Compile and Minify for Production
+2. Mobile screenshot
 
-```sh
-npm run build
-```
+![mobile screenshot](./design/mobile-screenshot.png)
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+### Links
 
-```sh
-npm run test:unit
-```
+- Solution URL: [link](https://github.com/afandilham/frontend-mentor-challenge/tree/main/fylo-landing-page)
+- Live Site URL: [Link](https://fylo-landing-dark.surge.sh/)
 
-### Lint with [ESLint](https://eslint.org/)
+## My process
 
-```sh
-npm run lint
-```
+### Built with
+
+- Semantic HTML5 markup
+- Vanila CSS 
+- Flexbox and Grid
+- Mobile-first workflow
+- [Vue](https://vuejs.org/) - JS library
+
+## Author
+
+- Frontend Mentor - [@afandilham](https://www.frontendmentor.io/profile/afandilham)
+- Twitter - [@afandilham](https://www.twitter.com/yourusername)
