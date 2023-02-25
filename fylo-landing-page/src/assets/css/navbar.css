@@ -1,0 +1,42 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2.5em;
+  padding-inline: 2em;
+  background-color: var(--dark-blue);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+nav > a > img {
+  width: 70px;
+}
+
+nav > ul {
+  display: flex;
+  gap: 0 10px
+}
+
+nav > ul > li {
+  list-style: none;
+}
+
+nav > ul > li a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  nav > ul {
+    gap: 0 3em;
+  }
+  
+  nav > ul > li a:hover {
+    text-decoration: underline;
+    font-weight: 700;
+  }
+  
+  nav > a > img {
+    width: 150px;
+  }
+}
