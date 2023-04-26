@@ -1,0 +1,7 @@
+.border-item {
+  @apply border-b border-grayishBlue pb-8;
+}
+
+.border-item:nth-child(3) {
+  @apply border-none pb-0;
+}
